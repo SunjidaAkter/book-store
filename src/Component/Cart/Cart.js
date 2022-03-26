@@ -2,7 +2,7 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = ({ cart }) => {
-
+    // cart component using destructuring
     const { img, name } = cart;
     return (
         <div className='row align-items-center my-2 container'>

@@ -4,7 +4,9 @@ import './Answers.css'
 const Answers = () => {
     return (
         <div className='container my-5'>
+            {/* answers headline */}
             <h1 className='my-3 text-center blue'>Q&A</h1>
+            {/* accordion */}
             <div className="accordion" id='accordionExample'>
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="headingOne">

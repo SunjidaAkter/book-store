@@ -12,9 +12,10 @@ const Shop = () => {
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
+
+    // cart adding
     const handleAddToCart = (selectedProduct) => {
         let newCart = [...carts];
-
         const exists = carts.find(product => product.id === selectedProduct.id);
         if (!exists) {
             newCart.push(selectedProduct);
@@ -23,7 +24,6 @@ const Shop = () => {
             const rest = carts.filter(product => product.id !== selectedProduct.id);
             newCart = [...rest, exists];
         }
-
         console.log(newCart);
         if (carts.length > 3) {
             alert("You can't select more than 4")
@@ -31,9 +31,13 @@ const Shop = () => {
         }
         setCarts(newCart);
     }
+
+    // clearing cart
     const handleAddToClear = () => {
         setCarts([]);
     }
+
+    // choosing randomly
     const handleAddToChoose = () => {
         if (carts.length > 0) {
             const chooseProduct = carts[Math.floor(Math.random() * carts.length)];
