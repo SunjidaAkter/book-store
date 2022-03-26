@@ -8,9 +8,11 @@ const Product = ({ product, handleAddToCart }) => {
     return (
         <div className='products'>
             <div className='product-text'>
-                <img src={img} alt="cup" />
-                <h5>{name}</h5>
-                <h6>Price : ${price}</h6>
+                <div className='bg-color d-flex justify-content-center'>
+                    <img src={img} alt="cup" />
+                </div>
+                <h5 className='text-center'>{name}</h5>
+                <p className='text-center'><strong>Price : ${price}</strong></p>
             </div>
             <button onClick={() => handleAddToCart(product)} className='btn'>
                 <p>Add to Cart</p>
