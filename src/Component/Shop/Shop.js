@@ -62,7 +62,7 @@ const Shop = () => {
                 }
             </div>
             <div className='cart-container rounded-start'>
-                <h1 className='text-center my-3 cart-head'>Choose Your Favourite Book</h1>
+                <h1 className='text-center my-3 cart-head'>Choose Four Books</h1>
                 {
                     carts.map(cart => <Cart
                         cart={cart}
@@ -71,7 +71,7 @@ const Shop = () => {
                 }
                 <div className='btns'>
                     <button onClick={handleAddToChoose} className='clear-btn'>
-                        Confused! Let me choose one
+                        Let me choose one
                     </button>
                     <button onClick={handleAddToClear} className='review-btn'>
                         Choose Again
