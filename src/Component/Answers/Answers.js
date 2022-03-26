@@ -28,15 +28,15 @@ const Answers = () => {
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <ul>
-                                <li> <strong>We use props to pass data from one component to another. On the other hand the state is a local data storage which means local to the component only and cannot be passed to other components.
+                                <li> <strong>We use props to pass data from one component to another, on the other hand the state is a local data storage which means local to the component only and cannot be passed to other components.
                                 </strong> </li>
-                                <li>Props are immutable But state is mutable.
+                                <li>Props are immutable but state is mutable.
                                 </li>
                                 <li>We can use props for making components reusable but state cannot make components reusable.
                                 </li>
-                                <li>Props are external and controlled by whatever renders the component on the other hand state is internal and controlled by the React Component itself.
+                                <li>Props are external and controlled by whatever renders the component, on the other hand state is internal and controlled by the React Component itself.
                                 </li>
-                                <li>Props are read-only whether state changes can be asynchronous.
+                                <li>Props are read-only, whether state changes can be asynchronous.
                                 </li>
                             </ul>
                         </div>
