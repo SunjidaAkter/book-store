@@ -24,7 +24,6 @@ const Shop = () => {
             const rest = carts.filter(product => product.id !== selectedProduct.id);
             newCart = [...rest, exists];
         }
-        console.log(newCart);
         if (carts.length > 3) {
             alert("You can't select more than 4")
             return;
