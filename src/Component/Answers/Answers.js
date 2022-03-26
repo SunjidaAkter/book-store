@@ -1,9 +1,10 @@
 import React from 'react';
+import './Answers.css'
 
 const Answers = () => {
     return (
         <div className='container my-5'>
-            <h1 className='my-3 text-center'>Q&A</h1>
+            <h1 className='my-3 text-center blue'>Q&A</h1>
             <div className="accordion" id='accordionExample'>
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="headingOne">

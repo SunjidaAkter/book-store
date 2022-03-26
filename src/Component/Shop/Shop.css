@@ -14,10 +14,12 @@
     margin: 7px ;
     
 }
-
+.cart-head{
+    color:rgb(7, 7, 102) ;
+}
 .cart-container{
-    background-color: rgba(255, 153, 0, 0.3);
-    
+    background-color: rgba(98, 155, 240, 0.3);
+    box-shadow: 0 4px 21px -12px rgb(0 0 0 / 79%);
 }
 .btns{
     display: flex;
@@ -29,29 +31,41 @@
 .clear-btn{
     display: flex;
     align-items: baseline;
-    background-color: rgba(255, 48, 48, 1);
-    border: none;
+    background-color: rgba(98, 155, 240, 0.3);
+    border: 1px solid rgb(7, 7, 102);
     border-radius: 5px;
     font-size: 20px;
+    color: rgb(7, 7, 102);
+    padding-top: 5px  ;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.clear-btn:hover{
+    background-color: orange;
+    border: 1px solid orange;
     color: white;
-    padding-top: 15px  ;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 .review-btn{
     display: flex;
     align-items: baseline;
-    background-color: orange;
-    border: none;
+    background-color: rgba(30, 48, 75, 0.3);
+    border: 1px solid rgb(7, 7, 102);
     border-radius: 5px;
     font-size: 20px;
-    color: white;
-    padding-top: 15px  ;
-    padding-bottom: 0px;
+    color: rgb(7, 7, 102);
+    padding-top: 5px  ;
+    padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.review-btn:hover{
+    background-color: rgba(255, 48, 48, 1);
+    border: 1px solid rgba(255, 48, 48, 1);
+    color: white;
 }
 .btn-icon{
     width: 15.5px;

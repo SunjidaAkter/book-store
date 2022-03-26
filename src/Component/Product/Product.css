@@ -12,23 +12,23 @@
 }
 .btn{
     /* border: none; */
-    background-color: rgba(255, 153, 0, 0.3);
+    background-color: rgba(98, 155, 240, 0.3);
     display: flex;
     align-items: baseline;
     justify-content: center;
     width: 100%;
     border: 1px solid #95A0A7;
     margin-bottom: 0;
-    /* position: absolute;
-    bottom: 0; */
 }
 .icon{
     width: 17.5px;
     margin-left: 10px;
     color: #0E161A;
 }
+
 .btn:hover{
-    background-color: orange;
+    background-color: rgb(7, 7, 102);
+    color: white;
 }
 .product-text p{
     margin-left: 10px;

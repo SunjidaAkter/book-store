@@ -26,7 +26,7 @@ const Shop = () => {
 
         console.log(newCart);
         if (carts.length > 3) {
-            alert('You cant select more than 4')
+            alert("You can't select more than 4")
             return;
         }
         setCarts(newCart);
@@ -40,6 +40,7 @@ const Shop = () => {
             setCarts([chooseProduct])
         }
         else {
+            alert('Please Choose 2 Books At least.')
             return;
         }
     }
@@ -56,8 +57,8 @@ const Shop = () => {
                     ></Product>)
                 }
             </div>
-            <div className='cart-container'>
-                <h1>Cart</h1>
+            <div className='cart-container rounded-start'>
+                <h1 className='text-center my-3 cart-head'>Choose Your Favourite Book</h1>
                 {
                     carts.map(cart => <Cart
                         cart={cart}
@@ -66,10 +67,10 @@ const Shop = () => {
                 }
                 <div className='btns'>
                     <button onClick={handleAddToChoose} className='clear-btn'>
-                        <p>Clear Cart</p>
+                        Confused! Let me choose one
                     </button>
                     <button onClick={handleAddToClear} className='review-btn'>
-                        <p>Choose Again</p>
+                        Choose Again
                     </button>
                 </div>
             </div>

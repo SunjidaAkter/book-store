@@ -15,8 +15,8 @@ const Product = ({ product, handleAddToCart }) => {
                 <p className='text-center'><strong>Price : ${price}</strong></p>
             </div>
             <button onClick={() => handleAddToCart(product)} className='btn'>
-                <p>Add to Cart</p>
-                <FontAwesomeIcon className='icon' icon={faCartPlus}></FontAwesomeIcon>
+                Add to Cart
+                <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
             </button>
         </div>
     );
